@@ -1,0 +1,95 @@
+.tituloFormulario {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+    background-color: #126455;
+    text-align: center;
+    font-size: 1rem;
+    display: inline-block;
+
+    h1 {
+        animation: fadeIn;
+        animation-duration: 10s;
+    }
+}
+
+
+.mainFormulario {
+    color: $color-texto;
+    background-color: $color-main;
+
+    .contenedorFormulario {
+
+        .formulario {
+            margin: 20px 30px 20px 20px;
+            padding: 0px 0px 0px 0px;
+            border: black solid 5px;
+            background-color: $color-principal;
+            animation: fadeIn;
+            animation-duration: 10s;
+
+            fieldset {
+                legend {
+                    color: white;
+                    margin: 30px;
+                }
+
+                div {
+                    label {
+                        color: $color-texto;
+                        margin: 20px;
+                        margin-bottom: 20px;
+                        padding: 20px;
+                    }
+                }
+
+                //APLICANDO EXTEND
+                div {
+                    .btnEnviar {
+                        border-radius: 1rem;
+                        margin: $medida-principal + 30;
+                        padding: $medida-principal;
+                        background-color: green;
+
+                    }
+
+                    .btnResetear {
+                        @extend .btnEnviar;
+                        background-color: yellow;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.ubicacion {
+    color: white;
+    padding: 20px;
+    background-color: #5E8B7E;
+
+    h2 {
+        margin: 20px;
+        margin-bottom: 10px;
+        animation: fadeIn;
+        animation-duration: 10s;
+    }
+
+    p {
+        margin: 20px;
+        animation: fadeIn;
+        animation-duration: 10s;
+    }
+
+
+    .imagenUbicacion {
+        img {
+            display: flex;
+            justify-content: center;
+            animation: fadeIn;
+            animation-duration: 10s;
+        }
+    }
+}

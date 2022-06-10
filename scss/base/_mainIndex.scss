@@ -1,0 +1,127 @@
+main {
+
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+    .tituloPrincipal {
+        @include flex (flex, center);
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        color: $color-texto;
+        opacity: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+
+        h1 {
+            font-size: 100px;
+            font-family: 'Square Peg', cursive;
+            z-index: 1;
+            animation: fadeIn;
+            animation-duration: 10s;
+        }
+
+    }
+
+    .video {
+
+        iframe {
+            margin: 0px;
+            background-color: $color-main ;
+            width: 100%;
+            height: 500px;
+        }
+
+    }
+
+
+}
+
+section {
+    .actividades {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        color: $color-texto;
+        background-color: #126455;
+        text-align: center;
+
+        h2 {
+            animation: fadeIn;
+            animation-duration: 10s;
+
+        }
+    }
+}
+
+section {
+    .actividadesGiras {
+        @include flex (flex, center);
+        background-color: $color-section;
+        padding: $medida-principal + 30;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            @include h2 (fadeIn, 10s, italic);
+
+        }
+
+        p {
+            animation: fadeIn;
+            animation-duration: 10s;
+            margin: $medida-principal + 30;
+            font-size: 1.2rem;
+        }
+
+        img {
+            margin: $medida-principal;
+            width: 500px;
+            height: 350px;
+
+            &:hover {
+                width: 600px;
+            }
+
+        }
+
+    }
+}
+
+section {
+    .actividadesIndividuales {
+        @include flex (flex, center);
+        background-color: $color-section;
+        padding: $medida-principal + 30;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            @include h2 (fadeIn, 10s, italic);
+
+        }
+
+        p {
+            margin: $medida-principal + 30;
+            font-size: 1.2rem;
+            animation: fadeIn;
+            animation-duration: 10s;
+
+        }
+
+        img {
+            margin: $medida-principal;
+            width: 500px;
+            height: 350px;
+
+            &:hover {
+                width: 600px;
+            }
+
+        }
+    }
+}

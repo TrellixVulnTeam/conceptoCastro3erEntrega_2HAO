@@ -1,0 +1,83 @@
+/* GRID */
+
+/* GRID PRINCIPAL */
+
+.containerPrincipal {
+    height: auto;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "section1 section1"
+        "section2 section3"
+        "footer footer";
+}
+
+.containerContacto {
+    height: auto;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "titulo  titulo"
+        "formulario ubicacion"
+        "footer footer";
+}
+
+/* GRID AREAS */
+
+header {
+    grid-area: header;  
+}
+
+main {
+    grid-area: main;
+}
+
+.section1 {
+    grid-area: section1;
+}
+
+.section2 {
+    grid-area: section2;
+}
+
+.section3 {
+    grid-area: section3;
+}
+
+.tituloFormulario {
+    grid-area: titulo;
+}
+
+.mainFormulario {
+    grid-area: formulario;
+}
+
+.contenedorFormulario {
+    grid-area: formulario;
+}
+
+section .ubicacion {
+    grid-area: ubicacion;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.viajesAMedidaMain {
+    grid-area: tituloViajes;
+}
+            
+.contenedorGrupales {
+    grid-area: grupales;
+}
+
+.contenedorIndividuales {
+    grid-area: individuales;
+}
+
+.nosotrosM {
+    grid-area: nosotros;
+
+}

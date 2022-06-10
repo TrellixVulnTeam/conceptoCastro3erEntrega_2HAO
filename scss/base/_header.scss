@@ -1,0 +1,46 @@
+header {
+    @include flex (flex, space-evenly);
+    align-items: center;
+    background-color: $color-principal;
+
+    .logoHeader {
+
+        width: 10%;
+        
+
+        img {
+
+            width: 80%;
+        }
+    }
+
+    nav.navbar {
+        background-color: $color-principal;
+        font-size: large;
+
+
+
+        .nav-item {
+            margin: 2rem;
+        }
+
+        .dropdown-menu {
+            background-color: $color-principal;
+
+        }
+    }
+
+    .redesSociales {
+        
+
+        .logoIG {
+            margin: 1rem;
+            width: $medida-principal + 10;
+        }
+
+        .logoFB {
+            margin: 1rem;
+            width: $medida-principal + 10;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.viajesAMedidaMain {
+    background-color: $color-main;
+
+    .tituloViajes {
+        h1 {
+            text-align: center;
+            color: $color-texto;
+            animation: fadeIn;
+            animation-duration: 5s;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+    }
+}
+
+.contenedorGrupales {
+    background-color: $color-section;
+
+    .subtituloGrupales {
+        h2 {
+            color: $color-texto;
+            animation: fadeIn;
+            animation-duration: 5s;
+            text-align: start;
+            margin-left: $medida-principal;
+            padding-top: $medida-principal;
+        }
+    }
+
+    .grupales {
+        @include flex (flex, left);
+        
+        .imagenGrupales {
+            img {
+                margin: $medida-principal;
+                animation: fadeIn;
+                animation-duration: 5s;
+            }
+        }
+
+        .parrafoGrupales {
+            p {
+                color: $color-texto;
+                margin: $medida-principal;
+                animation: fadeIn;
+                animation-duration: 5s;
+            }
+        }
+    }
+}
+
+.contenedorIndividuales {
+    background-color: $color-section;
+
+    .subtituloIndividuales {
+
+        h2 {
+            color: $color-texto;
+            animation: fadeIn;
+            animation-duration: 5s;
+            text-align: start;
+            margin-left: $medida-principal;
+            padding-top: $medida-principal;
+        }
+    }
+
+    .individuales {
+        @include flex (flex, left);
+
+        /* display: flex;
+        justify-content: left;
+ */
+        img {
+            margin: $medida-principal;
+            animation: fadeIn;
+            animation-duration: 5s;
+        }
+
+        p {
+            color: $color-texto;
+            margin: $medida-principal;
+            animation: fadeIn;
+            animation-duration: 5s;
+        }
+    }
+}
