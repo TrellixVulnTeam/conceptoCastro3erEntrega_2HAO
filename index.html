@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- descripcion html -->
     <meta name="description" content="Agencia de viajes dedicada a Giras Deportivas y Viajes Individuales">
-    
+
     <!-- palabras claves -->
     <meta name="keywords" content="VIAJES, GRUPALES, GIRAS, GIRAS DEPORTIVAS">
 
@@ -19,8 +19,8 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 
-      <!-- link del CSS -->
-      <link rel="stylesheet" href="css/main.css">
+    <!-- link del CSS -->
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- tipos de letras -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,6 +36,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,600;1,200&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:ital,wght@0,100;0,700;1,900&family=Square+Peg&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
         rel="stylesheet">
 
     <!-- link de animate -->
@@ -54,16 +60,16 @@
             <!-- logo -->
             <div class="logoHeader">
                 <a href="index.html">
-                    <img class="logoConcepto" src="img/LogoConcepto.svg" alt="logo concepto">
+                    <img class="logoConcepto" src="img/logo_concepto_pagina.svg" alt="logo concepto">
                 </a>
             </div>
 
             <!-- menu -->
 
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark ">
 
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -84,13 +90,13 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="pages/girasdeportivas.html">Giras Deportivas</a>
+                                        <a class="dropdown-item" href="pages/viajesamedida.html">Viajes
+                                            a Medida</a>
                                     </li>
-                                   
+
                                 </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/viajesamedida.html">Viajes a Medida</a>
-                            </li>
+                            
                             <li class="nav-item">
                                 <a class="nav-link" href="pages/contacto.html">Contacto</a>
                             </li>
@@ -104,11 +110,11 @@
             <!-- redes sociales -->
             <div class="redesSociales">
                 <a href="https://www.instagram.com" target="_blank">
-                    <img class="logoIG" src="img/LogoInstagram.png" alt="logo Instagram">
+                    <img class="logoIG" src="img/logo_instragram_sin_fondo.png" alt="logo Instagram">
                 </a>
 
                 <a href="https://www.facebook.com" target="_blank">
-                    <img class="logoFB" src="img/logofacebook.png" alt="logo Facebook">
+                    <img class="logoFB" src="img/logo_facebook_sin_fondo.png" alt="logo Facebook">
                 </a>
             </div>
 
@@ -122,50 +128,61 @@
             </div>
 
             <!-- video -->
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/2HKNHitShIg" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+            <div class="videoMain" style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0px; box-shadow: 0px 2px 8px 0 rgba(63,69,81,0.16); margin-top: 0; margin-bottom: 0; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+                <iframe loading="lazy"
+                    style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFDurT7t08&#x2F;watch?embed"
+                    allowfullscreen="allowfullscreen" allow="fullscreen">
+                </iframe>
             </div>
+            <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFDurT7t08&#x2F;watch?utm_content=DAFDurT7t08&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+                target="_blank" rel="noopener"></a>
 
 
         </main>
 
         <!-- subtitulo que hacemos -->
-        <section class="section1">
-            <div class="actividades">
-                <h2>¿Qué hacemos?</h2>
-            </div>
-        </section>
+        <section>
+            <h2 class="subtitulo">¿QUE HACEMOS?</h2>
 
-        <!-- seccion Giras Deportivas -->
-        <section class="section2">
-            <div class="actividadesGiras">
-                <h2>Giras deportivas</h2>
-                <img class="imgGiras"src="img/GirasTorneoFemenino.jpg" alt="Giras Deportivas">
-                <p>Nos dedicamos a la organización de Giras Deportivas de los deportes Hockey y Futbol</p>
-            </div>
-        </section>
+                      <!-- Giras Deportivas -->
+            <article>
+                <h3 class="subtituloGiras">GIRAS DEPORTIVAS</h3>
+                <div class="actividadesGiras">
+                    <div class="imgGiras">
+                        <img src="img/GirasTorneoFemenino.png" alt="Giras Deportivas">
+                    </div>
+                    <p>Nos dedicamos a la organización de Giras Deportivas de los deportes Hockey y Futbol</p>
+                </div>
 
-        <!-- seccion Viajes Individuales -->
-        <section class="section3">
-            <div class="actividadesIndividuales">
-                <h2> Viajes Individuales</h2>
-                <img class="imgIndividuales" src="img/ViajesAMedida.jpeg" alt="Viajes a Medida">
-                <p>Organizamos viajes a medida para aquellos que quieran viajar solos, con amigos, en familia</p>
-            </div>
 
+            </article>
+
+            <!-- Viajes Individuales -->
+            <article>
+                <h3 class="subtituloIndividuales">VIAJES A MEDIDA</h3>
+                <div class="actividadesIndividuales">
+                    <div class="imgIndividuales">
+                        <img src="img/ViajesAMedida.png" alt="Viajes a Medida">
+                    </div>
+                    <p>Organizamos viajes a medida para aquellos que quieran viajar solos, con amigos, en familia</p>
+                    
+                </div>
+
+            </article>
         </section>
     </div>
 
     <!-- footer -->
 
     <footer>
-        <img src="img/LogoConcepto.png" alt="Logo Concepto">
+        <img src="img/logo_concepto_pagina.svg" alt="Logo Concepto">
         <div class="datosContacto">
             <h3 class="datosContacto__subtitulo">Datos de Contacto</h3>
             <ul class="datosContacto__parrafo">
-                <li>Av Callao - Oficina 1 - San Nicolas (+54 11) xxxx-xxxx</li>
+                <li>Av Callao - Oficina 1 - San Nicolas (+54 11) 3776-6748</li>
                 <li> info@conceptoevt.com.ar.</li>
             </ul>
         </div>

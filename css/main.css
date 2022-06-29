@@ -2,29 +2,36 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #206A5D; }
+  background-color: #9B0000;
+  position: sticky;
+  top: 0;
+  z-index: 2; }
   header .logoHeader {
-    width: 10%; }
+    width: 15%; }
     header .logoHeader img {
       width: 80%; }
   header nav.navbar {
-    background-color: #206A5D;
-    font-size: large; }
+    background-color: #9B0000;
+    font-size: large;
+    color: white; }
     header nav.navbar .nav-item {
       margin: 2rem; }
     header nav.navbar .dropdown-menu {
-      background-color: #206A5D; }
-  header .redesSociales .logoIG {
-    margin: 1rem;
-    width: 30px; }
-  header .redesSociales .logoFB {
-    margin: 1rem;
-    width: 30px; }
+      background-color: #9B0000; }
+      header nav.navbar .dropdown-menu li .dropdown-item {
+        color: white; }
+        header nav.navbar .dropdown-menu li .dropdown-item:hover {
+          color: #9B0000; }
+  header .redesSociales {
+    display: flex; }
+    header .redesSociales .logoIG {
+      width: 60px; }
+    header .redesSociales .logoFB {
+      width: 60px; }
 
 main {
   position: relative;
-  display: inline-block;
-  text-align: center; }
+  background-color: #911F27; }
   main .tituloPrincipal {
     display: flex;
     justify-content: center;
@@ -36,159 +43,173 @@ main {
     opacity: 70%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    text-align: center; }
     main .tituloPrincipal h1 {
-      font-size: 100px;
+      font-size: 6rem;
       font-family: 'Square Peg', cursive;
       z-index: 1;
       animation: fadeIn;
       animation-duration: 10s; }
-  main .video iframe {
-    margin: 0px;
-    background-color: #5E8B7E;
-    width: 100%;
-    height: 500px; }
 
-section .actividades {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+section .subtitulo {
   color: white;
-  background-color: #126455;
-  text-align: center; }
-  section .actividades h2 {
-    animation: fadeIn;
-    animation-duration: 10s; }
+  background-color: #911F27;
+  text-align: center;
+  animation: fadeIn;
+  animation-duration: 2.5s;
+  padding: 10px;
+  font-family: "Asap Condensed", sans-serif; }
 
-section .actividadesGiras {
+section article .subtituloGiras {
+  animation: fadeInLeft;
+  animation-duration: 2.5s;
+  background-color: white;
+  text-align: left;
+  margin: 30px 0px 0px 30px;
+  color: #911F27;
+  font-family: "Asap Condensed", sans-serif; }
+
+section article .actividadesGiras {
   display: flex;
-  justify-content: center;
-  background-color: #85d8c9;
-  padding: 50px;
-  flex-direction: column;
-  align-items: center; }
-  section .actividadesGiras h2 {
-    animation: fadeIn;
-    animation-duration: 10s;
-    font-style: italic; }
-  section .actividadesGiras p {
-    animation: fadeIn;
-    animation-duration: 10s;
-    margin: 50px;
-    font-size: 1.2rem; }
-  section .actividadesGiras img {
-    margin: 20px;
-    width: 500px;
-    height: 350px; }
-    section .actividadesGiras img:hover {
-      width: 600px; }
-
-section .actividadesIndividuales {
-  display: flex;
-  justify-content: center;
-  background-color: #85d8c9;
-  padding: 50px;
-  flex-direction: column;
-  align-items: center; }
-  section .actividadesIndividuales h2 {
-    animation: fadeIn;
-    animation-duration: 10s;
-    font-style: italic; }
-  section .actividadesIndividuales p {
-    margin: 50px;
-    font-size: 1.2rem;
-    animation: fadeIn;
-    animation-duration: 10s; }
-  section .actividadesIndividuales img {
-    margin: 20px;
-    width: 500px;
-    height: 350px; }
-    section .actividadesIndividuales img:hover {
-      width: 600px; }
-
-.viajesAMedidaMain {
-  background-color: #5E8B7E; }
-  .viajesAMedidaMain .tituloViajes h1 {
-    text-align: center;
-    color: white;
-    animation: fadeIn;
-    animation-duration: 5s;
-    margin-top: 10px;
-    margin-bottom: 10px; }
-
-.contenedorGrupales {
-  background-color: #85d8c9; }
-  .contenedorGrupales .subtituloGrupales h2 {
-    color: white;
-    animation: fadeIn;
-    animation-duration: 5s;
-    text-align: start;
-    margin-left: 20px;
-    padding-top: 20px; }
-  .contenedorGrupales .grupales {
+  justify-content: left;
+  background-color: white;
+  align-items: center;
+  margin: 20px;
+  border-bottom: #911F27;
+  border-bottom-style: solid;
+  border-bottom-width: 4px; }
+  section article .actividadesGiras .imgGiras {
+    overflow: hidden;
+    width: 50%;
+    margin-bottom: 20px;
     display: flex;
     justify-content: left; }
-    .contenedorGrupales .grupales .imagenGrupales img {
-      margin: 20px;
-      animation: fadeIn;
-      animation-duration: 5s; }
-    .contenedorGrupales .grupales .parrafoGrupales p {
-      color: white;
-      margin: 20px;
-      animation: fadeIn;
-      animation-duration: 5s; }
-
-.contenedorIndividuales {
-  background-color: #85d8c9; }
-  .contenedorIndividuales .subtituloIndividuales h2 {
-    color: white;
-    animation: fadeIn;
-    animation-duration: 5s;
-    text-align: start;
-    margin-left: 20px;
-    padding-top: 20px; }
-  .contenedorIndividuales .individuales {
+    section article .actividadesGiras .imgGiras img {
+      object-fit: cover;
+      transition: 0.5s; }
+      section article .actividadesGiras .imgGiras img:hover {
+        transform: scale(1.2); }
+  section article .actividadesGiras p {
     display: flex;
-    justify-content: left;
-    /* display: flex;
-        justify-content: left;
- */ }
-    .contenedorIndividuales .individuales img {
-      margin: 20px;
-      animation: fadeIn;
-      animation-duration: 5s; }
-    .contenedorIndividuales .individuales p {
-      color: white;
-      margin: 20px;
-      animation: fadeIn;
-      animation-duration: 5s; }
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin: 20px; }
+
+section article .subtituloIndividuales {
+  background-color: white;
+  text-align: right;
+  margin: 30px 30px 0px 30px;
+  color: #911F27;
+  font-family: "Asap Condensed", sans-serif;
+  animation: fadeInRight;
+  animation-duration: 2.5s; }
+
+section article .actividadesIndividuales {
+  display: flex;
+  justify-content: right;
+  flex-direction: row-reverse;
+  background-color: white;
+  align-items: center;
+  border-bottom: #911F27;
+  margin: 20px; }
+  section article .actividadesIndividuales .imgIndividuales {
+    overflow: hidden;
+    width: 50%;
+    display: flex;
+    justify-content: right; }
+    section article .actividadesIndividuales .imgIndividuales img {
+      object-fit: cover;
+      transition: 0.5s; }
+      section article .actividadesIndividuales .imgIndividuales img:hover {
+        transform: scale(1.2); }
+  section article .actividadesIndividuales p {
+    font-size: 1.2rem;
+    margin: 20px; }
+
+main .tituloViajes h1 {
+  color: white;
+  background-color: #911F27;
+  text-align: center;
+  animation: fadeIn;
+  animation-duration: 2.5s;
+  padding: 10px;
+  font-family: "Asap Condensed", sans-serif; }
+
+.contenedorGrupales .subtituloGrupales h2 {
+  background-color: white;
+  text-align: left;
+  margin: 30px 0px 0px 30px;
+  color: #911F27;
+  font-family: 'Asap Condensed', sans-serif;
+  animation: fadeIn;
+  animation-duration: 2.5s; }
+
+.contenedorGrupales .grupales {
+  display: flex;
+  justify-content: left;
+  background-color: white;
+  align-items: center;
+  margin: 20px;
+  border-bottom: white;
+  border-bottom-style: solid;
+  border-bottom-width: 4px; }
+  .contenedorGrupales .grupales .imagenGrupales img {
+    margin: 20px;
+    animation: fadeIn;
+    animation-duration: 2.5s; }
+  .contenedorGrupales .grupales p {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin: 20px; }
+
+.contenedorIndividuales .subtituloIndividuales h2 {
+  background-color: white;
+  text-align: right;
+  margin: 30px 30px 0px 30px;
+  color: #911F27;
+  font-family: "Asap Condensed", sans-serif;
+  animation: fadeIn;
+  animation-duration: 2.5s; }
+
+.contenedorIndividuales .individuales {
+  display: flex;
+  justify-content: right;
+  flex-direction: row-reverse;
+  background-color: white;
+  align-items: center;
+  border-bottom: #911F27;
+  margin: 20px; }
+  .contenedorIndividuales .individuales p {
+    font-size: 1.2rem;
+    margin: 20px; }
 
 .tituloFormulario {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   color: white;
-  background-color: #126455;
+  background-color: #911F27;
   text-align: center;
-  font-size: 1rem;
-  display: inline-block; }
-  .tituloFormulario h1 {
-    animation: fadeIn;
-    animation-duration: 10s; }
+  animation: fadeIn;
+  animation-duration: 2.5s;
+  padding: 10px;
+  font-family: "Asap Condensed", sans-serif; }
 
 .mainFormulario {
-  color: white;
-  background-color: #5E8B7E; }
+  color: #911F27;
+  background-color: white;
+  font-family: "Asap Condensed", sans-serif; }
   .mainFormulario .contenedorFormulario .formulario {
     margin: 20px 30px 20px 20px;
     padding: 0px 0px 0px 0px;
-    border: black solid 5px;
-    background-color: #206A5D;
+    border: #911F27 solid 5px;
+    background-color: white;
     animation: fadeIn;
-    animation-duration: 10s; }
+    animation-duration: 2.5s; }
     .mainFormulario .contenedorFormulario .formulario fieldset legend {
-      color: white;
+      color: black;
       margin: 30px; }
     .mainFormulario .contenedorFormulario .formulario fieldset div label {
-      color: white;
+      color: #911F27;
       margin: 20px;
       margin-bottom: 20px;
       padding: 20px; }
@@ -196,110 +217,164 @@ section .actividadesIndividuales {
       border-radius: 1rem;
       margin: 50px;
       padding: 20px;
-      background-color: green; }
+      background-color: #911F27;
+      color: white; }
     .mainFormulario .contenedorFormulario .formulario fieldset div .btnResetear {
-      background-color: yellow; }
+      background-color: green; }
 
 .ubicacion {
-  color: white;
   padding: 20px;
-  background-color: #5E8B7E; }
+  background-color: white;
+  font-family: "Asap Condensed", sans-serif; }
   .ubicacion h2 {
+    color: BLACK;
     margin: 20px;
     margin-bottom: 10px;
     animation: fadeIn;
-    animation-duration: 10s; }
+    animation-duration: 2.5s; }
   .ubicacion p {
+    color: #911F27;
     margin: 20px;
     animation: fadeIn;
-    animation-duration: 10s; }
+    animation-duration: 2.5s; }
   .ubicacion .imagenUbicacion img {
     display: flex;
     justify-content: center;
     animation: fadeIn;
-    animation-duration: 10s; }
+    animation-duration: 2.5s; }
 
 main {
-  background-color: #37a08d; }
+  background-color: white; }
   main .tituloNosotros {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     color: white;
-    background-color: #126455;
+    background-color: #911F27;
     text-align: center;
-    font-size: 1rem; }
-    main .tituloNosotros h1 {
-      animation: fadeIn;
-      animation-duration: 5s; }
+    animation: fadeIn;
+    animation-duration: 2.5s;
+    padding: 10px;
+    font-family: 'Asap Condensed', sans-serif; }
   main .nosotros {
     display: flex;
-    justify-content: left; }
-    main .nosotros img {
-      margin: 20px;
-      animation: fadeIn;
-      animation-duration: 5s; }
-    main .nosotros .parrafoNosotros p {
-      color: white;
-      margin: 20px;
-      animation: fadeIn;
-      animation-duration: 5s; }
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    height: 500px;
+    margin: 20px; }
+    main .nosotros .imagenNosotros {
+      overflow: hidden;
+      width: 70%;
+      height: 500px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center; }
+      main .nosotros .imagenNosotros img {
+        object-fit: cover;
+        transition: 0.5s; }
+        main .nosotros .imagenNosotros img:hover {
+          transform: scale(1.2); }
+    main .nosotros p {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.2rem;
+      margin: 20px; }
 
 main .tituloGiras {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   color: white;
-  background-color: #126455;
+  background-color: #911F27;
   text-align: center;
-  font-size: 1rem; }
+  animation: fadeIn;
+  animation-duration: 2.5s;
+  padding: 10px;
+  font-family: 'Asap Condensed', sans-serif; }
+
+.containerDeportes {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+  align-items: center;
+  margin: 20px; }
+  .containerDeportes .containerFutbol {
+    width: 50%; }
+    .containerDeportes .containerFutbol img {
+      object-fit: cover;
+      transition: 0.5s; }
+    .containerDeportes .containerFutbol h2 {
+      background-color: white;
+      text-align: center;
+      color: #911F27;
+      font-family: "Asap Condensed", sans-serif;
+      animation: fadeIn;
+      animation-duration: 2.5s; }
+  .containerDeportes .containerHockey {
+    width: 50%; }
+    .containerDeportes .containerHockey img {
+      object-fit: cover;
+      transition: 0.5s; }
+    .containerDeportes .containerHockey h2 {
+      background-color: white;
+      text-align: center;
+      color: #911F27;
+      font-family: "Asap Condensed", sans-serif;
+      animation: fadeIn;
+      animation-duration: 2.5s; }
 
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin: 0px 0px;
-  background-color: #F1F1E8; }
+  background-color: #B22727; }
   footer img {
-    width: 10%;
-    margin: 0px 20px 0px 60px; }
+    width: 12%; }
   footer .datosContacto {
     padding: 30px;
     margin-right: 50px;
     text-align: right; }
     footer .datosContacto h3 {
-      color: black;
+      color: white;
       font-size: 1.2rem; }
     footer .datosContacto ul li {
-      color: black;
+      color: white;
       font-size: 1rem;
       list-style-type: none; }
 
-/* GRID */
+/* /* GRID */
 /* GRID PRINCIPAL */
 .containerPrincipal {
   height: auto;
   display: grid;
-  grid-template-areas: "header header" "main main" "section1 section1" "section2 section3" "footer footer"; }
+  grid-template-areas: "header header" "main main" "section section" "footer footer"; }
+
+.containerNosotros {
+  height: auto;
+  display: grid;
+  grid-template-areas: "header header" "mainN mainN" "footer footer"; }
 
 .containerContacto {
   height: auto;
   display: grid;
   grid-template-areas: "header header" "titulo  titulo" "formulario ubicacion" "footer footer"; }
 
-/* GRID AREAS */
+.containerGiras {
+  height: auto;
+  display: grid;
+  grid-template-areas: "header header" "tituloG  tituloG" "sectionG sectionG" "footer footer"; }
+
+/* /* GRID AREAS */
 header {
   grid-area: header; }
 
 main {
   grid-area: main; }
 
-.section1 {
-  grid-area: section1; }
+section {
+  grid-area: section; }
 
-.section2 {
-  grid-area: section2; }
+.mainGiras {
+  grid-area: tituloG; }
 
-.section3 {
-  grid-area: section3; }
+.containerDeportes {
+  grid-area: sectionG; }
 
 .tituloFormulario {
   grid-area: titulo; }
@@ -310,7 +385,7 @@ main {
 .contenedorFormulario {
   grid-area: formulario; }
 
-section .ubicacion {
+.ubicacion {
   grid-area: ubicacion; }
 
 footer {
@@ -326,42 +401,92 @@ footer {
   grid-area: individuales; }
 
 .nosotrosM {
-  grid-area: nosotros; }
+  grid-area: mainN; }
 
 @media screen and (max-width: 400px) {
-  .containerPrincipal {
-    height: auto;
-    display: grid;
-    grid-template-areas: "header header" "main main" "section1 section1" "section2 section2 " "section3 section3" "footer"; }
-    .containerPrincipal header {
+  /* MQ HEADER  */
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: cnter; }
+    header .logoHeader {
+      width: 40%; }
+      header .logoHeader a {
+        display: flex;
+        justify-content: center; }
+    header .navbar .container-fluid {
       justify-content: center; }
-      .containerPrincipal header .redesSociales {
-        display: none; }
-    .containerPrincipal main .tituloPrincipal h1 {
-      font-size: 3rem; }
-    .containerPrincipal .section1 {
-      margin: 0px; }
-    .containerPrincipal .section2 img {
-      margin: 0px;
-      width: 200px;
-      height: 150px; }
-    .containerPrincipal .section3 img {
-      margin: 0px;
-      width: 200px;
-      height: 150px; }
-  footer img {
-    display: none; }
-  footer .datosContacto {
+    header .navbar-toggler {
+      justify-content: center; }
+    header nav.navbar .nav-item {
+      align-self: center;
+      margin: 1rem; }
+    header .redesSociales {
+      display: none; }
+  /* MQ INDEX */
+  main .tituloPrincipal h1 {
+    font-size: 2rem; }
+  main .videoMain {
+    max-width: 100%; }
+  section article .subtituloGiras {
+    text-align: center;
+    margin: 0px; }
+  section article .actividadesGiras {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    font-size: 1rem; }
-    footer .datosContacto h3 {
+    flex-wrap: wrap;
+    justify-content: start;
+    font-size: small;
+    text-align: center; }
+    section article .actividadesGiras img {
+      max-width: 100%;
+      height: auto; }
+    section article .actividadesGiras p {
       font-size: 1rem; }
+  section article .subtituloIndividuales {
+    text-align: center;
+    margin: 0px; }
+  section article .actividadesIndividuales {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    font-size: small;
+    text-align: center; }
+    section article .actividadesIndividuales img {
+      max-width: 100%;
+      height: auto; }
+    section article .actividadesIndividuales p {
+      font-size: 1rem; }
+  /* MQ FOOTER */
+  footer {
+    justify-content: center; }
+    footer img {
+      display: none; }
+    footer .datosContacto {
+      flex-direction: column;
+      font-size: 1rem;
+      text-align: center;
+      margin: 0px; }
+      footer .datosContacto h3 {
+        font-size: 0.7rem; }
+      footer .datosContacto ul {
+        padding: 0px; }
+        footer .datosContacto ul li {
+          font-size: 0.7rem; }
+  /* MQ NOSOTROS */
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-size: small;
+    text-align: center; }
+  /* MQ CONTACTO */
   .containerContacto {
     height: auto;
     display: grid;
     grid-template-areas: "header" "titulo" "formulario" "ubicacion" "footer"; }
+  /* MQ VIAJES A MEDIDA */
   .containerViajesAMedida {
     height: auto;
     display: grid;
@@ -388,72 +513,84 @@ footer {
       flex-wrap: wrap;
       justify-content: start;
       font-size: small;
-      text-align: center; }
-  .containerNosotros {
-    height: auto;
-    display: grid;
-    grid-template-areas: "header" "nosotros" "footer"; }
-    .containerNosotros .nosotrosM {
-      display: flex;
-      flex-direction: column; }
-      .containerNosotros .nosotrosM .tituloNosotros h1 {
-        font-size: 1rem; }
-      .containerNosotros .nosotrosM .nosotros {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: start;
-        font-size: small;
-        text-align: center; }
-        .containerNosotros .nosotrosM .nosotros .imagenNosotros img {
-          width: 300px; }
-  section .tituloFormulario {
-    font-size: 1.2rem;
-    text-align: center; }
-  .imagenUbicacion {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    margin: 20px; }
-  .mainformulario {
-    width: auto; } }
+      text-align: center; } }
 
 @media screen and (max-width: 1024px) {
+  /* MQ HEADER */
   header {
-    justify-content: center; }
-    header .redesSociales {
-      display: none; }
+    align-items: center; }
+    header .logoHeader {
+      width: 25%; }
+      header .logoHeader a {
+        display: flex;
+        justify-content: center; }
+    header .navbar .container-fluid {
+      justify-content: center; }
+    header .navbar-toggler {
+      justify-content: center; }
+    header nav.navbar .nav-item {
+      align-self: center;
+      margin: 1rem; }
+    header .redesSociales a img {
+      margin: 0px; }
+  /* INDEX */
   main .tituloPrincipal h1 {
-    font-size: 4rem; }
-  main .video iframe {
-    width: auto; }
+    font-size: 3rem; }
+  main .videoMain {
+    max-width: 100%; }
+  section article .subtituloGiras {
+    text-align: center;
+    margin: 0px; }
+  section article .actividadesGiras {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    font-size: small;
+    text-align: center; }
+    section article .actividadesGiras img {
+      max-width: 100%;
+      height: auto; }
+    section article .actividadesGiras p {
+      font-size: 1rem; }
+  section article .subtituloIndividuales {
+    text-align: center;
+    margin: 0px; }
+  section article .actividadesIndividuales {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    font-size: small;
+    text-align: center; }
+    section article .actividadesIndividuales img {
+      max-width: 100%;
+      height: auto; }
+    section article .actividadesIndividuales p {
+      font-size: 1rem; }
+  /* FOOTER */
   footer img {
     width: 15%; }
   footer .datosContacto {
+    margin: 10px;
+    padding: 0px;
+    text-align: left; }
+    footer .datosContacto .datosContacto__parrafo {
+      padding: 0px;
+      margin: 0px; }
+      footer .datosContacto .datosContacto__parrafo li {
+        text-align: left; }
+  .nosotros {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
-  footer .datosContacto__subtitulo h3 {
-    font-size: 1.2rem; }
-  .section1 {
-    margin: 0px; }
-  .section2 img {
-    margin: 0px;
-    width: 200px;
-    height: 150px; }
-  .section3 img {
-    margin: 0px;
-    width: 200px;
-    height: 150px; }
-  .containerPrincipal {
-    height: auto;
-    display: grid;
-    grid-template-areas: "header" "main" "section1" "section2 " "section3" "footer"; }
+    justify-content: start;
+    font-size: small;
+    text-align: center; }
+  /* MQ CONTACTO */
   .containerContacto {
     height: auto;
     display: grid;
-    grid-template-areas: "header" "titulo" "formulario" "ubicacion" "footer"; }
-  .containerViajesAMedida {
-    height: auto;
-    display: grid;
-    grid-template-areas: "header" "tituloViajes" "grupales" "individuales" "footer"; } }
+    grid-template-areas: "header" "titulo" "formulario" "ubicacion" "footer"; } }
+
+* {
+  box-sizing: border-box; }

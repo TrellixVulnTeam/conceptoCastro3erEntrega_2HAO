@@ -1,42 +1,38 @@
 .tituloFormulario {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    color: white;
-    background-color: #126455;
+    color: $color-texto;
+    background-color: $color-main2;
     text-align: center;
-    font-size: 1rem;
-    display: inline-block;
+    animation: fadeIn;
+    animation-duration: 2.5s;
+    padding: 10px;
+    font-family: $font-family;
 
-    h1 {
-        animation: fadeIn;
-        animation-duration: 10s;
-    }
 }
 
 
 .mainFormulario {
-    color: $color-texto;
-    background-color: $color-main;
+    color:$color-main2;
+    background-color: $color-main3;
+    font-family: $font-family;
 
     .contenedorFormulario {
 
         .formulario {
             margin: 20px 30px 20px 20px;
             padding: 0px 0px 0px 0px;
-            border: black solid 5px;
-            background-color: $color-principal;
-            animation: fadeIn;
-            animation-duration: 10s;
+            border: $color-main2 solid 5px;
+            background-color: $color-main3;
+            @include animation (fadeIn, 2.5s);
 
             fieldset {
                 legend {
-                    color: white;
+                    color: black;
                     margin: 30px;
                 }
 
                 div {
                     label {
-                        color: $color-texto;
+                        color: $color-main2;
                         margin: 20px;
                         margin-bottom: 20px;
                         padding: 20px;
@@ -49,13 +45,15 @@
                         border-radius: 1rem;
                         margin: $medida-principal + 30;
                         padding: $medida-principal;
-                        background-color: green;
+                        background-color: $color-main2;
+                        color:$color-texto;
+
 
                     }
 
                     .btnResetear {
                         @extend .btnEnviar;
-                        background-color: yellow;
+                        background-color: green;
                     }
                 }
             }
@@ -66,30 +64,28 @@
 }
 
 .ubicacion {
-    color: white;
     padding: 20px;
-    background-color: #5E8B7E;
+    background-color: $color-main3;
+    font-family: $font-family;
 
     h2 {
+        color: BLACK;
         margin: 20px;
         margin-bottom: 10px;
-        animation: fadeIn;
-        animation-duration: 10s;
+        @include animation (fadeIn, 2.5s);
     }
 
     p {
+        color: $color-main2;
         margin: 20px;
-        animation: fadeIn;
-        animation-duration: 10s;
+        @include animation (fadeIn, 2.5s);
     }
 
 
     .imagenUbicacion {
         img {
-            display: flex;
-            justify-content: center;
-            animation: fadeIn;
-            animation-duration: 10s;
+            @include flex (flex, center);
+            @include animation (fadeIn, 2.5s);
         }
     }
 }

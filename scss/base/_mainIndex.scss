@@ -1,8 +1,7 @@
 main {
 
     position: relative;
-    display: inline-block;
-    text-align: center;
+    background-color: $color-main2;
 
     .tituloPrincipal {
         @include flex (flex, center);
@@ -15,113 +14,150 @@ main {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        text-align: center;
 
 
 
         h1 {
-            font-size: 100px;
+            font-size: 6rem;
             font-family: 'Square Peg', cursive;
             z-index: 1;
             animation: fadeIn;
             animation-duration: 10s;
+
         }
 
     }
-
-    .video {
-
-        iframe {
-            margin: 0px;
-            background-color: $color-main ;
-            width: 100%;
-            height: 500px;
-        }
-
-    }
-
-
 }
 
 section {
-    .actividades {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+
+    .subtitulo {
         color: $color-texto;
-        background-color: #126455;
+        background-color: $color-main2;
         text-align: center;
+        @include animation (fadeIn, 2.5s);
+        padding: 10px;
+        font-family: $font-family;
 
-        h2 {
-            animation: fadeIn;
-            animation-duration: 10s;
+    }
+
+
+
+    article {
+
+        .subtituloGiras {
+            @include animation (fadeInLeft, 2.5s);
+            background-color: white;
+            text-align: left;
+            margin: 30px 0px 0px 30px;
+            color: $color-main2;
+            font-family: $font-family;
+            
+        }
+
+
+        .actividadesGiras {
+            @include flex (flex, left);
+            background-color: white;
+            align-items: center;
+            margin: 20px;
+            border-bottom: $color-main2;
+            border-bottom-style: solid;
+            border-bottom-width: 4px;
+
+
+
+
+
+            .imgGiras {
+                overflow: hidden;
+                width: 50%;
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: left;
+
+
+
+                img {
+
+                    object-fit: cover;
+                    transition: 0.5s;
+
+
+
+
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+
+            }
+
+
+            p {
+                display: flex;
+                flex-direction: column;
+                font-size: 1.2rem;
+                margin: 20px;
+            }
+
 
         }
     }
-}
 
-section {
-    .actividadesGiras {
-        @include flex (flex, center);
-        background-color: $color-section;
-        padding: $medida-principal + 30;
-        flex-direction: column;
-        align-items: center;
-
-        h2 {
-            @include h2 (fadeIn, 10s, italic);
-
+    article {
+        .subtituloIndividuales {
+            background-color: white;
+            text-align: right;
+            margin: 30px 30px 0px 30px;
+            color: $color-main2;
+            font-family: $font-family;
+            @include animation (fadeInRight, 2.5s);
         }
 
-        p {
-            animation: fadeIn;
-            animation-duration: 10s;
-            margin: $medida-principal + 30;
-            font-size: 1.2rem;
-        }
 
-        img {
-            margin: $medida-principal;
-            width: 500px;
-            height: 350px;
+        .actividadesIndividuales {
+            @include flex (flex, right);
+            flex-direction: row-reverse;
+            background-color: $color-main3;
+            align-items: center;
+            border-bottom: $color-main2;
+            margin: 20px;
 
-            &:hover {
-                width: 600px;
+            .imgIndividuales {
+
+                overflow: hidden;
+                width: 50%;
+                display: flex;
+                justify-content: right;
+                
+
+               img {
+
+                    object-fit: cover;
+                    transition: 0.5s;
+                    
+
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+
+
             }
 
-        }
+            p {
 
-    }
-}
+                font-size: 1.2rem;
+                margin: 20px;
 
-section {
-    .actividadesIndividuales {
-        @include flex (flex, center);
-        background-color: $color-section;
-        padding: $medida-principal + 30;
-        flex-direction: column;
-        align-items: center;
-
-        h2 {
-            @include h2 (fadeIn, 10s, italic);
-
-        }
-
-        p {
-            margin: $medida-principal + 30;
-            font-size: 1.2rem;
-            animation: fadeIn;
-            animation-duration: 10s;
-
-        }
-
-        img {
-            margin: $medida-principal;
-            width: 500px;
-            height: 350px;
-
-            &:hover {
-                width: 600px;
             }
 
+
         }
+
     }
 }

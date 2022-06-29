@@ -1,177 +1,70 @@
 @media screen and (max-width:400px) {
-    .containerPrincipal {
 
-        height: auto;
-        display: grid;
-        grid-template-areas:
-            "header header"
-            "main main"
-            "section1 section1"
-            "section2 section2 "
-            "section3 section3"
-            "footer";
+    /* MQ HEADER  */
+    header {
 
-        header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: cnter;
 
+        .logoHeader {
+            width: 40%;
+
+
+            a {
+                display: flex;
+                justify-content: center;
+            }
+
+        }
+
+        .navbar .container-fluid {
             justify-content: center;
-
-            .redesSociales {
-                display: none;
-            }
         }
 
-        main {
-
-            .tituloPrincipal h1 {
-                font-size: 3rem;
-            }
+        .navbar-toggler {
+            justify-content: center;
         }
 
-        .section1 {
-            margin: 0px;
+        nav.navbar .nav-item {
+            align-self: center;
+            margin: 1rem;
         }
 
-        .section2 {
-            img {
-                margin: 0px;
-                width: 200px;
-                height: 150px;
 
-            }
-        }
-
-        .section3 {
-            img {
-                margin: 0px;
-                width: 200px;
-                height: 150px;
-            }
-        }
-    }
-
-    footer {
-
-        img {
+        .redesSociales {
             display: none;
         }
 
 
-        .datosContacto {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            font-size: 1rem;
-
-            h3 {
-
-                font-size: 1rem;
-
-            }
-        }
     }
 
 
-    .containerContacto {
-        height: auto;
-        display: grid;
-        grid-template-areas:
-            "header"
-            "titulo"
-            "formulario"
-            "ubicacion"
-            "footer";
-    }
+    /* MQ INDEX */
 
-    .containerViajesAMedida {
-        height: auto;
-        display: grid;
-        grid-template-areas:
-            "header"
-            "tituloViajes"
-            "grupales"
-            "individuales"
-            "footer";
-
-        main {
-            .viajesAMedidaMain {
-
-                .tituloViajes {
-                    h1 {
-                        font-size: medium;
-                        text-align: center;
-
-                    }
-                }
-            }
+    main {
+        .tituloPrincipal h1 {
+            font-size: 2rem;
         }
 
-        section {
-            .contenedorGrupales {
-                .subtituloGrupales {
-                    h2 {
-                        font-size: medium;
-                    }
-                }
+        .videoMain {
+            max-width: 100%;
 
-                .grupales {
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                    text-align: left;
-                    font-size: small;
-                    text-align: center;
-
-                    .imagenGrupales {
-                        img {
-                            width: 200px;
-                        }
-                    }
-                }
-            }
         }
 
-
-
-        .section {
-            .contenedorIndividuales {
-                .subtituloIndividuales {
-                    h2 {
-                        font-size: medium;
-                    }
-                }
-
-                .individuales {
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                    justify-content: start;
-                    font-size: small;
-                    text-align: center;
-                }
-            }
-        }
     }
 
 
-    .containerNosotros {
-        height: auto;
-        display: grid;
-        grid-template-areas:
-            "header"
-            "nosotros"
-            "footer";
+    section {
 
-        .nosotrosM {
-            display: flex;
-            flex-direction: column;
 
-            .tituloNosotros {
-                h1 {
-                    font-size: 1rem;
-                }
+        article {
+            .subtituloGiras {
+                text-align: center;
+                margin: 0px;
             }
 
-            .nosotros {
+            .actividadesGiras {
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
@@ -179,123 +72,100 @@
                 font-size: small;
                 text-align: center;
 
-                .imagenNosotros img {
-                    width: 300px;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+
+
+
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            .subtituloIndividuales {
+                text-align: center;
+                margin: 0px;
+
+            }
+
+            .actividadesIndividuales {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: start;
+                font-size: small;
+                text-align: center;
+
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+
+
+
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+
+
+
+        }
+
+    }
+
+    /* MQ FOOTER */
+
+    footer {
+        justify-content: center;
+
+        img {
+            display: none;
+        }
+
+
+        .datosContacto {
+
+            flex-direction: column;
+            font-size: 1rem;
+            text-align: center;
+            margin: 0px;
+
+            h3 {
+
+                font-size: 0.7rem;
+
+            }
+
+            ul {
+                padding: 0px;
+
+                li {
+                    font-size: 0.7rem;
                 }
             }
         }
     }
 
+    /* MQ NOSOTROS */
 
-
-
-
-
-
-
-
-
-    section .tituloFormulario {
-        font-size: 1.2rem;
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        font-size: small;
         text-align: center;
 
     }
 
-    .imagenUbicacion {
-        width: 300px;
-        height: 300px;
-        display: flex;
-        margin: 20px;
-    }
-
-    .mainformulario {
-        width: auto;
-    }
-
-}
-
-
-
-
-@media screen and (max-width:1024px) {
-
-    header {
-        justify-content: center;
-
-        .redesSociales {
-
-            display: none;
-        }
-    }
-
-
-    main {
-        .tituloPrincipal {
-            h1 {
-                font-size: 4rem;
-            }
-        }
-
-        .video {
-            iframe {
-
-                width: auto;
-            }
-        }
-    }
-
-
-    footer {
-        img {
-            width: 15%;
-        }
-
-        .datosContacto {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .datosContacto__subtitulo {
-            h3 {
-
-                font-size: 1.2rem;
-            }
-        }
-    }
-
-    .section1 {
-        margin: 0px;
-    }
-
-    .section2 {
-        img {
-            margin: 0px;
-            width: 200px;
-            height: 150px;
-        }
-
-    }
-
-    .section3 {
-        img {
-            margin: 0px;
-            width: 200px;
-            height: 150px;
-        }
-    }
-
-    .containerPrincipal {
-        height: auto;
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main"
-            "section1"
-            "section2 "
-            "section3"
-            "footer";
-    }
+    /* MQ CONTACTO */
 
     .containerContacto {
         height: auto;
@@ -308,14 +178,253 @@
             "footer";
     }
 
-    .containerViajesAMedida {
+    /* MQ VIAJES A MEDIDA */
+
+     .containerViajesAMedida {
+                height: auto;
+                display: grid;
+                grid-template-areas:
+                    "header"
+                    "tituloViajes"
+                    "grupales"
+                    "individuales"
+                    "footer";
+
+                main {
+                    .viajesAMedidaMain {
+
+                        .tituloViajes {
+                            h1 {
+                                font-size: medium;
+                                text-align: center;
+
+                            }
+                        }
+                    }
+                }
+
+                section {
+                    .contenedorGrupales {
+                        .subtituloGrupales {
+                            h2 {
+                                font-size: medium;
+                            }
+                        }
+
+                        .grupales {
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            text-align: left;
+                            font-size: small;
+                            text-align: center;
+
+                            .imagenGrupales {
+                                img {
+                                    width: 200px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+
+                .section {
+                    .contenedorIndividuales {
+                        .subtituloIndividuales {
+                            h2 {
+                                font-size: medium;
+                            }
+                        }
+
+                        .individuales {
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            justify-content: start;
+                            font-size: small;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+}
+
+
+
+
+
+
+ @media screen and (max-width:1024px) {
+
+
+    /* MQ HEADER */
+    header {
+
+        align-items: center;
+
+        .logoHeader {
+            width: 25%;
+
+
+            a {
+                display: flex;
+                justify-content: center;
+            }
+
+        }
+
+        .navbar .container-fluid {
+            justify-content: center;
+        }
+
+        .navbar-toggler {
+            justify-content: center;
+        }
+
+        nav.navbar .nav-item {
+            align-self: center;
+            margin: 1rem;
+        }
+
+        .redesSociales {
+
+
+            a {
+                img {
+                    margin: 0px;
+                }
+            }
+        }
+
+    }
+
+    /* INDEX */
+    main {
+        .tituloPrincipal h1 {
+            font-size: 3rem;
+        }
+
+        .videoMain {
+            max-width: 100%;
+
+        }
+
+    }
+
+
+    section {
+
+
+        article {
+            .subtituloGiras {
+                text-align: center;
+                margin: 0px;
+            }
+
+            .actividadesGiras {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: start;
+                font-size: small;
+                text-align: center;
+
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+
+
+
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            .subtituloIndividuales {
+                text-align: center;
+                margin: 0px;
+
+            }
+
+            .actividadesIndividuales {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: start;
+                font-size: small;
+                text-align: center;
+
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+
+
+
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+
+
+
+        }
+
+    }
+
+    /* FOOTER */
+
+    footer {
+        img {
+            width: 15%;
+        }
+
+        .datosContacto {
+            margin: 10px;
+            padding: 0px;
+            text-align: left;
+
+            .datosContacto__parrafo {
+                padding: 0px;
+                margin: 0px;
+
+                li {
+                    text-align: left;
+                }
+            }
+
+        }
+
+    }
+
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        font-size: small;
+        text-align: center;
+
+    }
+
+    /* MQ CONTACTO */
+
+    .containerContacto {
         height: auto;
         display: grid;
         grid-template-areas:
             "header"
-            "tituloViajes"
-            "grupales"
-            "individuales"
+            "titulo"
+            "formulario"
+            "ubicacion"
             "footer";
     }
+
 }

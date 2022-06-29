@@ -1,4 +1,4 @@
-/* GRID */
+/* /* GRID */
 
 /* GRID PRINCIPAL */
 
@@ -8,8 +8,16 @@
     grid-template-areas:
         "header header"
         "main main"
-        "section1 section1"
-        "section2 section3"
+        "section section"
+        "footer footer";
+}
+
+.containerNosotros {
+    height: auto;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "mainN mainN"
         "footer footer";
 }
 
@@ -23,26 +31,39 @@
         "footer footer";
 }
 
-/* GRID AREAS */
+.containerGiras {
+    height: auto;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "tituloG  tituloG"
+        "sectionG sectionG"
+        "footer footer";
+
+}
+
+
+
+/* /* GRID AREAS */
 
 header {
-    grid-area: header;  
+    grid-area: header;
 }
 
 main {
     grid-area: main;
 }
 
-.section1 {
-    grid-area: section1;
+section {
+    grid-area: section;
 }
 
-.section2 {
-    grid-area: section2;
-}
 
-.section3 {
-    grid-area: section3;
+.mainGiras {
+    grid-area: tituloG;
+}
+.containerDeportes {
+    grid-area: sectionG;
 }
 
 .tituloFormulario {
@@ -57,7 +78,7 @@ main {
     grid-area: formulario;
 }
 
-section .ubicacion {
+.ubicacion {
     grid-area: ubicacion;
 }
 
@@ -68,7 +89,7 @@ footer {
 .viajesAMedidaMain {
     grid-area: tituloViajes;
 }
-            
+
 .contenedorGrupales {
     grid-area: grupales;
 }
@@ -78,6 +99,6 @@ footer {
 }
 
 .nosotrosM {
-    grid-area: nosotros;
+    grid-area: mainN;
 
-}
+}  

@@ -2,11 +2,59 @@
 
 main {
     .tituloGiras {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        color: white;
-        background-color: #126455;
+        color: $color-texto;
+        background-color: $color-main2;
         text-align: center;
-        font-size: 1rem;
+        @include animation (fadeIn, 2.5s);
+        padding: 10px;
+        font-family: 'Asap Condensed', sans-serif;
     }
+}
+
+.containerDeportes {
+   display: flex;
+   justify-content: space-evenly;
+    background-color: $color-main3;
+    align-items: center;
+    margin: 20px;
+
+    .containerFutbol {
+        width: 50%;
+        
+        
+
+         img {
+
+                    object-fit: cover;
+                    transition: 0.5s;
+         }
+
+        h2 {
+            background-color: $color-main3;
+            text-align: center;
+            color: $color-main2;
+            font-family:$font-family;
+            @include animation (fadeIn, 2.5s);
+        }
+    }
+
+    .containerHockey {
+        width:50%;
+        
+
+         img {
+
+                    object-fit: cover;
+                    transition: 0.5s;
+         }
+
+        h2 {
+            background-color: $color-main3;
+            text-align: center;
+            color: $color-main2;
+            font-family: $font-family;
+            @include animation (fadeIn, 2.5s);
+        }
+    }
+
 }

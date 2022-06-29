@@ -1,12 +1,17 @@
 header {
     @include flex (flex, space-evenly);
     align-items: center;
-    background-color: $color-principal;
+    background-color: #9B0000;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+
 
     .logoHeader {
 
-        width: 10%;
-        
+        width: 15%;
+
 
         img {
 
@@ -15,8 +20,11 @@ header {
     }
 
     nav.navbar {
-        background-color: $color-principal;
+        background-color: $color-principalFondo;
         font-size: large;
+        color: $color-texto;
+
+
 
 
 
@@ -25,22 +33,33 @@ header {
         }
 
         .dropdown-menu {
-            background-color: $color-principal;
+            background-color: $color-principalFondo;
+
+            li {
+                .dropdown-item {
+                    color: $color-texto;
+
+                    &:hover {
+                        color: $color-principalFondo;
+                    }
+                }
+
+            }
 
         }
     }
 
     .redesSociales {
+        display: flex;
         
 
         .logoIG {
-            margin: 1rem;
-            width: $medida-principal + 10;
+            width: 60px;
         }
 
         .logoFB {
-            margin: 1rem;
-            width: $medida-principal + 10;
+
+            width: 60px;
         }
     }
 }
